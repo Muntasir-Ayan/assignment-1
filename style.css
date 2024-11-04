@@ -706,3 +706,203 @@ h2 {
     color: #666;
     font-size: 14px;
   }
+
+
+
+     /* Important Information Section */
+     .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+  
+      .info-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+  
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .info-list li {
+        margin-bottom: 12px;
+        line-height: 1.5;
+        color: #333;
+      }
+  
+      /* FAQ Section */
+      .faq-section {
+        margin-top: 40px;
+      }
+  
+      .faq-item {
+        border-bottom: 1px solid #eee;
+        padding: 16px 0;
+        cursor: pointer;
+      }
+  
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+      }
+  
+      .faq-icon {
+        font-size: 20px;
+      }
+  
+      /* Reviews Section */
+      .reviews-section {
+        margin-top: 40px;
+      }
+  
+      .rating-header {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+  
+      .rating-score {
+        font-size: 32px;
+        font-weight: 600;
+      }
+  
+      .rating-text {
+        font-size: 24px;
+        font-weight: 500;
+      }
+  
+      .reviews-count {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+  
+      .reviews-slider {
+        display: flex;
+        overflow-x: auto;
+        gap: 24px;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+      }
+  
+      .review-card {
+        min-width: 300px;
+        padding: 24px;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        scroll-snap-align: start;
+      }
+  
+      .review-rating {
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+  
+      .review-text {
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+  
+      .review-author {
+        font-weight: 500;
+      }
+  
+      .review-date {
+        color: #666;
+        font-size: 14px;
+      }
+  
+      .see-all-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 24px;
+        padding: 8px 16px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+      }
+
+
+      /* footer section */
+
+
+      .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+  
+      .host-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 32px;
+      }
+  
+      .host-detail {
+        margin-bottom: 24px;
+      }
+  
+      .host-name {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+      }
+  
+      .host-icon {
+        font-size: 20px;
+      }
+  
+      .languages-section {
+        margin-top: 16px;
+      }
+  
+      .languages-label {
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+  
+      .languages-list {
+        color: #666;
+      }
+  
+      .contact-section {
+        margin-top: 32px;
+        border-top: 1px solid #eee;
+        padding-top: 32px;
+      }
+  
+      .contact-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+  
+      .contact-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border: 1px solid #0066ff;
+        border-radius: 8px;
+        color: #0066ff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+  
+      .contact-button:hover {
+        background-color: #f5f8ff;
+      }
