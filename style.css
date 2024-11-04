@@ -558,3 +558,151 @@ h2 {
   .see-all-link:hover {
     text-decoration: underline;
   }
+
+
+  /* have any questions */
+
+  /* Question Section */
+  .question-section {
+    background-color: #F7F9FE;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .question-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .question-subtitle {
+    color: #666;
+    margin-bottom: 16px;
+  }
+
+  .search-container {
+    position: relative;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    font-size: 16px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .beta-badge {
+    background: #000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
+
+  /* House Rules Section */
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .check-times {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .rule-icon {
+    font-size: 20px;
+    width: 24px;
+  }
+
+  .rule-content {
+    flex: 1;
+  }
+
+  .rule-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .rule-description {
+    color: #666;
+    font-size: 14px;
+  }
+
+  /* Cancellation Section */
+  .cancellation-timeline {
+    background: #f8f8f8;
+    padding: 24px;
+    border-radius: 12px;
+    margin-top: 24px;
+  }
+
+  .timeline {
+    position: relative;
+    height: 2px;
+    background: #ddd;
+    margin: 40px 0;
+  }
+
+  .timeline-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .timeline-point.start { left: 0; }
+  .timeline-point.middle { left: 50%; }
+  .timeline-point.end { right: 0; }
+
+  .timeline-label {
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+
+  .refund-info {
+    margin-top: 40px;
+  }
+
+  .refund-date {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .refund-text {
+    color: #666;
+    font-size: 14px;
+  }
