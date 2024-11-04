@@ -413,3 +413,99 @@ h2 {
     font-size: 14px;
     font-style: italic;
 }
+
+
+/* The location  */
+.section-title {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.location-category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.location-list {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.rest-easy {
+    background-color: #f9fafb;
+    padding: 24px;
+    border-radius: 12px;
+    margin: 32px 0;
+}
+
+.rest-easy p {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.policies {
+    margin-top: 32px;
+}
+
+.policy-list {
+    list-style: none;
+}
+
+.policy-item {
+    margin-bottom: 12px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.policy-item::before {
+    content: "- ";
+    color: #9ca3af;
+}
+
+.manager {
+    margin-top: 40px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 24px;
+}
+
+.manager-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.manager-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.manager-name {
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+.languages {
+    margin-top: 24px;
+}
+
+.languages-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.languages-list {
+    color: #4b5563;
+}
