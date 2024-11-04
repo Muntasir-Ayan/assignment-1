@@ -509,3 +509,52 @@ h2 {
 .languages-list {
     color: #4b5563;
 }
+
+/* Amenities */
+.amenities-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .amenities-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #222222;
+  }
+
+  .amenity-icon {
+    font-size: 20px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amenity-text {
+    font-size: 16px;
+  }
+
+  .see-all-link {
+    color: #006CE6;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .see-all-link:hover {
+    text-decoration: underline;
+  }
