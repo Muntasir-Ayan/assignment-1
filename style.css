@@ -1,0 +1,41 @@
+  /* Reset margins and paddings */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contain{
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* Styling the header */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the nav links */
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* Optional hover effect for links */
+.nav-links a:hover {
+    color: #000;
+}
+
+.upper_body a{
+    text-decoration: none;
+}
+
+.upper_body{
+    display: flex;
+    justify-content: space-between;
+}
