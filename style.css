@@ -74,7 +74,6 @@
 }
 .gallery-container {
     
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -171,14 +170,12 @@
 
 .loading-icon{
   margin: 20% 20%;
-  /* height: 50px;
-  width: 50px; */
 }
 
 .container-overview{
-    /* padding: 20px; */
+    
     max-width: 1200px;
-    /* margin: 0 auto; */
+    
     margin-left: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -270,93 +267,12 @@
   justify-content: space-between;
 }
 
-/*
-.map-section {
-
-  border-radius: 12px;
-  padding: 15px; 
-  margin-bottom: 15px;
-}
-
-.map-container {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.map-container img{
-  max-width: 300px;
-  height: 150px;
-}
-
-
-
-.location-name {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.view-map-link {
-  color: #0066cc;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.view-map-link:hover {
-  text-decoration: underline;
-}
-
-.nearby-places {
-  margin-top: 15px;
-}
-
-.place-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.place-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.place-icon {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.place-name {
-  font-size: 14px;
-}
-
-.drive-time {
-  font-size: 14px;
-  color: #666;
-}
-
-.see-more {
-  color: #0066cc;
-  text-decoration: none;
-  font-size: 14px;
-  margin-top: 10px;
-  display: block;
-}
-
-.see-more:hover {
-  text-decoration: underline;
-} */
 
 .map-section {
-  /* background-color: rgb(229, 249, 244); */
+
   border-radius: 12px;
   padding: 15px;
-  /* margin-bottom: 15px; */
+
 }
 
 .map-container {
@@ -406,39 +322,6 @@
 }
 
 
-
-
-
-
-
-/* .map-container {
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 16px;
-}
-
-.map-container img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.location {
-    color: #4b5563;
-    margin-bottom: 8px;
-}
-
-.landmarks {
-    margin-top: 16px;
-}
-
-.landmark {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #e5e7eb;
-} */
-
 /* Booking card styles */
 .booking-card {
     background: #1e1b4b;
@@ -453,6 +336,7 @@
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    align-items: center;
 }
 
 .price {
@@ -470,13 +354,14 @@
 
 .date-input {
     padding: 12px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #383a3f;
     border-radius: 8px;
     width: 100%;
 }
 
 .travelers {
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .book-button {
@@ -484,8 +369,7 @@
 
     background: #3b82f6;
     color: white;
-    /* width: 100%; */
-    width: 6rem;
+    width: 80%;
     align-items: center;
     padding: 15px;
     border: none;
@@ -791,7 +675,6 @@ h2 {
 
   /* have any questions */
 
-  /* Question Section */
   .question-section {
     background-color: #F7F9FE;
     border-radius: 12px;
@@ -841,12 +724,7 @@ h2 {
   }
 
   /* House Rules Section */
-  /* .house-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  } */
+
   
   h1 {
     margin-bottom: 30px;
@@ -1174,7 +1052,14 @@ h2 {
       }
   
       .host-icon {
-        font-size: 20px;
+        font-size: 20px; .two-column{
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr 2fr; /* First column takes 1/3, second column takes 2/3 */
+          gap: 10px; /* Optional: Adds spacing between columns */
+          align-items: start;
+          margin-bottom: 20px;
+        }
       }
 
       .two-column-1{
