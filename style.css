@@ -169,11 +169,17 @@
 
 /* body Navigation End */
 
+.loading-icon{
+  margin: 20% 20%;
+  /* height: 50px;
+  width: 50px; */
+}
 
 .container-overview{
-    padding: 20px;
+    /* padding: 20px; */
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
@@ -474,15 +480,20 @@
 }
 
 .book-button {
+  margin-top: 10px;
+
     background: #3b82f6;
     color: white;
-    width: 100%;
-    padding: 12px;
+    /* width: 100%; */
+    width: 6rem;
+    align-items: center;
+    padding: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 12px;
+    margin-left: 10px;
 }
 
 .total {
