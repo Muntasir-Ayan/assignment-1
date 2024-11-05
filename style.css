@@ -26,10 +26,32 @@
     font-weight: 500;
 }
 
-/* Optional hover effect for links */
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links on mobile */
+    }
+
+    .user-icon {
+        display: block; /* Show only user icon on mobile */
+    }
+}
+
+/* Optional: to hide the user icon on larger screens */
+@media (min-width: 769px) {
+    .user-icon {
+        display: none; /* Hide user icon on desktop */
+    }
+}
+
+/* Optional hover effect for links
 .nav-links a:hover {
     color: #000;
-}
+    border: 2px solid ;
+    background-color: #0066cc;
+    border-radius: 50px;
+    transition: 1s;
+} */
 
 
 /* body section */
