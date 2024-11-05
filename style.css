@@ -885,7 +885,7 @@ h2 {
 
   /* damage section */
 
-  .damage-section{
+  .two-column{
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr; /* First column takes 1/3, second column takes 2/3 */
@@ -942,6 +942,17 @@ h2 {
   }
 
   /* Cancellation Section */
+
+
+  .two-column{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* First column takes 1/3, second column takes 2/3 */
+    gap: 10px; /* Optional: Adds spacing between columns */
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
   .cancellation-timeline {
     background: #f8f8f8;
     padding: 24px;
