@@ -509,6 +509,10 @@
 
 
 /* Room and beds */
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .container-room{
     max-width: 800px;
@@ -545,11 +549,20 @@ h2 {
 .bedroom {
     margin-bottom: 24px;
 }
+.bedroom_section{
+  display: flex;
+  justify-content: space-between;
+}
 
-.bedroom h4 {
+.bedroom h3 {
     font-size: 16px;
     margin-bottom: 8px;
     color: #374151;
+}
+.bathroom_1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 .bed-info {
@@ -817,6 +830,61 @@ h2 {
   }
 
   /* House Rules Section */
+  /* .house-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  } */
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  .rules-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .rule-item {
+    margin-bottom: 20px;
+  }
+  
+  .check-times {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .rule-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .rule {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .rule-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .rule-description {
+    color: #666;
+    font-size: 14px;
+  }
+
+
+
+
   .section-title {
     font-size: 22px;
     font-weight: 600;
