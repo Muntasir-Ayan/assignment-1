@@ -256,7 +256,156 @@
     margin-bottom: 16px;
 }
 
+
+/* map section */
+
+ .map-properties{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+.map-section {
+
+  border-radius: 12px;
+  padding: 15px; 
+  margin-bottom: 15px;
+}
+
 .map-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-container img{
+  max-width: 300px;
+  height: 150px;
+}
+
+
+
+.location-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.view-map-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.view-map-link:hover {
+  text-decoration: underline;
+}
+
+.nearby-places {
+  margin-top: 15px;
+}
+
+.place-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.place-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.place-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place-name {
+  font-size: 14px;
+}
+
+.drive-time {
+  font-size: 14px;
+  color: #666;
+}
+
+.see-more {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+} */
+
+.map-section {
+  /* background-color: rgb(229, 249, 244); */
+  border-radius: 12px;
+  padding: 15px;
+  /* margin-bottom: 15px; */
+}
+
+.map-container {
+  width: 80%;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.map-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.place-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.place-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drive-time {
+  font-size: 14px;
+  color: #666;
+}
+
+.see-more {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+
+
+
+
+/* .map-container {
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 16px;
@@ -282,7 +431,7 @@
     justify-content: space-between;
     padding: 8px 0;
     border-bottom: 1px solid #e5e7eb;
-}
+} */
 
 /* Booking card styles */
 .booking-card {
