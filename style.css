@@ -1165,7 +1165,10 @@ h2 {
       .host-icon {
         font-size: 20px;
       }
-  
+
+      .two-column-1{
+        grid-column: 2;
+      }
       .languages-section {
         margin-top: 16px;
       }
@@ -1181,7 +1184,7 @@ h2 {
   
       .contact-section {
         margin-top: 32px;
-        border-top: 1px solid #eee;
+        /* border-top: 1px solid #eee; */
         padding-top: 32px;
       }
   
@@ -1197,7 +1200,7 @@ h2 {
         gap: 8px;
         padding: 8px 16px;
         border: 1px solid #0066ff;
-        border-radius: 8px;
+        border-radius: 50px;
         color: #0066ff;
         text-decoration: none;
         font-weight: 500;
