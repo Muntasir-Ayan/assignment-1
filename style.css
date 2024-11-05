@@ -224,6 +224,9 @@
     align-items: center;
     gap: 8px;
 }
+.feature span{
+  padding: auto;
+}
 
 .amenities {
     margin-bottom: 24px;
@@ -885,6 +888,11 @@ h2 {
         color: #000;
         font-weight: 500;
       }
+
+      .rating .reviews-link {
+        display: block;
+    }
+    
 
 
       /* footer section */
