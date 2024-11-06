@@ -1162,3 +1162,246 @@ h2 {
       .contact-button:hover {
         background-color: #f5f8ff;
       }
+
+
+
+      /* responsive codes */
+
+
+/* Base styles remain the same until the media queries */
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  Container width adjustment */
+   .contain {
+      max-width: 95%;
+  }
+
+  /* Header adjustments */
+  .header {
+      padding: 10px;
+  } 
+
+  /* Upper body adjustments */
+  .upper_body {
+      flex-direction: column;
+      max-height: none;
+      gap: 15px;
+      margin: 15px auto;
+  }
+
+  .upper_button {
+      width: 100%;
+  }
+
+  .upper_button button {
+      width: 100%;
+  } 
+
+  /* Gallery grid adjustments */
+  .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+  } 
+
+  /* Overview container adjustments */
+  .container-overview {
+      grid-template-columns: 1fr;
+      /* margin: 0 10px; */
+      gap: 16px;
+  } 
+
+  /* Features grid adjustments */
+  .features {
+    display: flex;
+      grid-template-columns: 2fr;
+  } 
+
+  /* Amenities grid adjustments */
+  .amenities-grid {
+    display: flex;
+      grid-template-columns: 1fr;
+  }
+
+  /* Price card adjustments */
+  .price-card {
+      margin: 20px 0;
+  }
+
+  .dates {
+      grid-template-columns: 1fr;
+  }
+
+  .book-button {
+      width: 100%;
+      margin-left: 0;
+  }  
+
+  /* Room and beds section */
+  .wrapper {
+      flex-direction: column;
+  }    @media (max-width: 768px) {
+            .upper_body {
+                padding: 12px 16px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-item.main-image {
+                grid-column: span 2;
+                aspect-ratio: 16/9;
+            }
+
+            .nav-tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .upper_button button {
+                font-size: 0; 
+              }
+
+              .upper_button button i {
+                  font-size: 16px; 
+              }
+          }
+
+  .bedroom_section {
+      flex-direction: column;
+      gap: 15px;
+  } 
+
+  /* Rules container */
+  .rules-container {
+      grid-template-columns: 1fr;
+  } 
+
+  /* Two column layouts */
+  .two-column {
+      grid-template-columns: 1fr;
+  } 
+
+  /* Map section adjustments */
+  .map-properties {
+      flex-direction: column;
+  }
+
+  .map-section {
+      max-height: none;
+  } 
+
+  /* Reviews section */
+  .reviews-slider {
+      scroll-snap-type: none;
+  } 
+
+   .review-card {
+      min-width: 100%;
+  } 
+
+  /* Host info section */
+  .host-info {
+      grid-template-columns: 1fr;
+  } 
+
+  /* Property title and details */
+  .property-title {
+      font-size: 24px;
+  } 
+
+  /* Rating and reviews */
+  .rating {
+      flex-wrap: wrap;
+  } 
+
+  /* Navigation tabs */
+   .nav-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-item {
+      margin-right: 20px;
+  }
+} 
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) { 
+  
+  .property-title {
+      font-size: 20px;
+  }
+
+  .gallery-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .gallery-item.main-image {
+      grid-column: auto;
+      grid-row: auto;
+  }
+
+  .features, .amenities-grid {
+      gap: 12px;
+  }
+
+  .price {
+      font-size: 20px;
+  }
+
+  .rating-score {
+      font-size: 24px;
+  }
+
+  .rating-text {
+      font-size: 18px;
+  }
+
+  .section-title {
+      font-size: 20px;
+  }
+}  
+
+/* Landscape orientation adjustments */
+ /* @media screen and (max-width: 768px) and (orientation: landscape) {
+  .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dates {
+      grid-template-columns: 1fr 1fr;
+  }
+}  */
+
+
+/* @media (max-width: 768px) {
+  .upper_body {
+      padding: 12px 16px;
+  }
+
+  .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item.main-image {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+  }
+
+  .nav-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .upper_button button {
+      font-size: 0;  Hide button text on mobile 
+  }
+
+  .upper_button button i {
+      font-size: 16px; Show only icons 
+  }
+} */
