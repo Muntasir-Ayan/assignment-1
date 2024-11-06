@@ -41,6 +41,24 @@
             <button> <i class="fa-solid fa-arrow-up-from-bracket" style="color: #00BFFF;"></i> Share</button>
             <button> <i class="fa-regular fa-heart" style="color: red;"></i> Save</button>
           </div>
+
+          <!-- share pop up start -->
+          <div class="share-popup-container">
+            <div class="share-popup">
+              <div class="share-popup-header">
+                <button class="close-btn">&times;</button>
+                <h3>Juneau Vacation Home: Stunning View + Beach Access</h3>
+                
+              </div>
+              <div class="share-options">
+                <button class="copy-link-btn">
+                  <i class="fa fa-link"></i> Copy link
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- share pop up end -->
+           
         </div>
         <!-- see all properties button end -->
 
@@ -855,6 +873,47 @@
       }
 
 // heart button red end
+
+
+// share pop start
+const shareButton = document.querySelector('.fa-arrow-up-from-bracket');
+const closeButton = document.querySelector('.close-btn');
+const copyLinkButton = document.querySelector('.copy-link-btn');
+const sharePopup = document.querySelector('.share-popup-container');
+
+shareButton.addEventListener('click', () => {
+  sharePopup.style.display = 'flex';
+});
+
+closeButton.addEventListener('click', () => {
+  sharePopup.style.display = 'none';
+});
+
+copyLinkButton.addEventListener('click', () => {
+  // Get the link to be copied
+  const linkToCopy = 'https://example.com/juneau-vacation-home';
+
+  // Create a temporary input element to hold the link
+  const tempInput = document.createElement('textarea');
+  tempInput.value = linkToCopy;
+  document.body.appendChild(tempInput);
+
+  // Select and copy the link
+  tempInput.select();
+  document.execCommand('copy');
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  // Optionally, you can show a success message to the user
+  alert('Link copied to clipboard!');
+
+  // Close the popup
+  sharePopup.style.display = 'none';
+});
+
+// share pop end
+
 
     </script>
 
