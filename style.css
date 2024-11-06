@@ -923,6 +923,7 @@
     padding: 24px;
     border-radius: 12px;
     margin-top: 24px;
+
   }
 
   .timeline {
@@ -975,6 +976,42 @@
     color: #666;
     font-size: 14px;
   }
+
+   /* Refund status text */
+.timeline::after {
+  content: 'Full refund';
+  position: absolute;
+  left: 25%;
+  top: -20px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #333;
+}
+
+/* No refund text */
+.timeline-point.middle::after {
+  content: 'No refund';
+  position: absolute;
+  /* left: 100%; */
+  top: -20px;
+  transform: translateX(300%);
+  font-size: 14px;
+  color: #333;
+  width: max-content;
+}
+
+/* .timeline-point.end::before{
+  content: 'No refund';
+  position: absolute;
+  right:50%;
+  top: -20px;
+  transform: translateX(50%);
+  font-size: 14px;
+  color: #333;
+  width: max-content;
+} */
+
+
 
 
 
@@ -1196,28 +1233,7 @@
     background-color: #f5f8ff;
   }
 
-  /* Refund status text */
-.timeline::after {
-  content: 'Full refund';
-  position: absolute;
-  left: 25%;
-  top: -20px;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #333;
-}
-
-/* No refund text */
-.timeline-point.middle::after {
-  content: 'No refund';
-  position: absolute;
-  /* left: 50%; */
-  top: -20px;
-  transform: translateX(300%);
-  font-size: 14px;
-  color: #333;
-  width: max-content;
-}
+ 
 
 
 
