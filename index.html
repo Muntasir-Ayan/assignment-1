@@ -831,7 +831,32 @@
       </div>
     </div>
 
+    <script>
+      // heart button red start
+      const heartButton = document.querySelector('.fa-regular.fa-heart');
 
+      // Check if the saved state is stored in localStorage on initial load
+      let isSaved = localStorage.getItem('isSaved') === 'true';
+      updateHeartButtonState();
+
+      heartButton.addEventListener('click', () => {
+      isSaved = !isSaved;
+      updateHeartButtonState();
+      localStorage.setItem('isSaved', isSaved);
+      });
+
+      function updateHeartButtonState() {
+      if (isSaved) {
+        heartButton.style.color = 'red';
+      } 
+      else {
+        heartButton.style.color = '#00BFFF';
+      }
+      }
+
+// heart button red end
+
+    </script>
 
 
 
