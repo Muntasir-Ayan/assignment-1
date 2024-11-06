@@ -1,6 +1,41 @@
 # assignment-1
 W3 engineers Assignment-1
 
+# Hotel Booking Website
+
+A responsive website for hotel booking services. This project showcases a modern, user-friendly interface for a hotel booking system, allowing users to explore room options, view amenities, and make reservations online.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+### Project Overview
+
+The **Hotel Booking Website** project is designed to help users find and book hotel rooms easily. It provides essential hotel booking functionalities like browsing available rooms, viewing amenities, and submitting booking inquiries. The website is fully responsive and styled using HTML and CSS, ensuring compatibility across various devices.
+
+### Features
+
+- **Responsive Design**: Adaptable to all screen sizes including mobile, tablet, and desktop.
+- **Room Listings**: Showcase different room types with images, prices, and descriptions.
+- **Amenities Section**: Lists the hotel’s amenities like Wi-Fi, pool access, and gym facilities.
+- **Booking Form**: Allows users to submit booking inquiries with their contact details.
+- **Cross-browser Compatibility**: Works well on all major browsers including Chrome, Firefox, Safari, and Edge.
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/hotel-booking-website.git
+
+
 The Page looks like this in desktop view.
 ![image](https://github.com/user-attachments/assets/c3d80f26-0cd1-43cb-906a-c45fcf5a1f71)
 ![image](https://github.com/user-attachments/assets/0face5d1-3166-4179-b6b2-ad9818dc8e2c)
