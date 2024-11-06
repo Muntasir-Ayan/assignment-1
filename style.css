@@ -977,30 +977,32 @@
     font-size: 14px;
   }
 
-   /* Refund status text */
-.timeline::after {
-  content: 'Full refund';
-  position: absolute;
-  left: 25%;
-  top: -20px;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #333;
-}
+  /* Refund status text */
+  .timeline::after {
+    content: 'Full refund';
+    position: absolute;
+    left: 25%;
+    top: -20px;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+  }
 
-/* No refund text */
-.timeline-point.middle::after {
-  content: 'No refund';
-  position: absolute;
-  /* left: 100%; */
-  top: -20px;
-  transform: translateX(300%);
-  font-size: 14px;
-  color: #333;
-  width: max-content;
-}
+  /* No refund text */
 
-/* .timeline-point.end::before{
+  .timeline-point.middle::after {
+    content: 'No refund';
+    position: absolute;
+    left: 75%;
+    /* Adjusted to be between middle and end */
+    top: -20px;
+    transform: translateX(300%);
+    font-size: 14px;
+    color: #333;
+    width: max-content;
+  }
+
+  /* .timeline-point.end::before{
   content: 'No refund';
   position: absolute;
   right:50%;
@@ -1077,6 +1079,7 @@
   .rating-score {
     font-size: 32px;
     font-weight: 600;
+    color: green;
   }
 
   .rating-text {
@@ -1137,6 +1140,7 @@
     text-decoration: none;
     color: #000;
     font-weight: 500;
+    color: blue;
   }
 
   .rating .reviews-link {
@@ -1233,20 +1237,20 @@
     background-color: #f5f8ff;
   }
 
- 
+
 
 
 
   /* responsive codes */
 
 
-  
+
 
   /* Base styles remain the same until the media queries */
 
   /* Media Queries for Responsive Design */
   @media screen and (max-width: 768px) {
-    Container width adjustment */ .contain {
+  .contain {
       max-width: 95%;
     }
 
@@ -1402,9 +1406,98 @@
       margin-right: 20px;
     }
 
-    .before{
+    .before {
       display: flex;
     }
+
+    .cancellation-timeline {
+      background: #f8f8f8;
+      padding: 24px;
+      border-radius: 12px;
+      /* margin-top: 24px; */
+      display: flex;
+      justify-content: center;
+    }
+    
+    .timeline {
+      position: relative;
+      width: 2px;
+      height: 200px;
+      background: #ddd;
+      margin: 0;
+    }
+    
+    .timeline-point {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+  
+    
+    .timeline-point.start {
+      top: 0;
+      background: #333; 
+    }
+    
+    .timeline-point.middle {
+      top: 50%;
+    }
+    
+    .timeline-point.end {
+      bottom: 0;
+    }
+    
+    .timeline-label {
+      position: absolute;
+      left: 20px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    
+    .timeline-label.start {
+      /* top: 0; */
+      transform: translateY(-50%);
+    }
+    
+    .timeline-label.middle {
+      /* top: 50%; */
+      transform: translateY(-50%);
+    }
+    
+    .timeline-label.end {
+      /* bottom: 0; */
+      transform: translateY(50%);
+    }
+    
+    /* Refund status text */
+    .timeline::after {
+      content: 'Full refund';
+      position: absolute;
+      left: -60px;
+      top: 0;
+      font-size: 14px;
+      color: #333;
+      transform: translateY(100%);
+    }
+    
+    .timeline-point.middle::after{
+     
+      content: 'No refund';
+      position: absolute;
+      left: -60px;
+      top: 50%;
+      font-size: 14px;
+      color: #333;
+      transform: translateY(200%);
+      /* margin-top: 200%; */
+    }
+    
   }
 
   /* Small mobile devices */
@@ -1446,45 +1539,42 @@
   }
 
   /* Landscape orientation adjustments */
-  /* @media screen and (max-width: 768px) and (orientation: landscape) {
-  .gallery-grid {
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    .gallery-grid {
       grid-template-columns: repeat(3, 1fr);
-  }
+    }
 
-  .dates {
+    .dates {
       grid-template-columns: 1fr 1fr;
+    }
   }
-}  */
 
 
-  /* @media (max-width: 768px) {
-  .upper_body {
+  @media (max-width: 768px) {
+    .upper_body {
       padding: 12px 16px;
-  }
+    }
 
-  .gallery-grid {
+    .gallery-grid {
       grid-template-columns: repeat(2, 1fr);
-  }
+    }
 
-  .gallery-item.main-image {
+    .gallery-item.main-image {
       grid-column: span 2;
       aspect-ratio: 16/9;
-  }
+    }
 
-  .nav-tabs {
+    .nav-tabs {
       overflow-x: auto;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
+    }
+
+    .upper_button button {
+      font-size: 0;
+    }
+
+    .upper_button button i {
+      font-size: 16px;
+    }
   }
-
-  .upper_button button {
-      font-size: 0;  Hide button text on mobile 
-  }
-
-  .upper_button button i {
-      font-size: 16px; Show only icons 
-  }
-} */
-
-
-
