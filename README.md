@@ -25,7 +25,7 @@ The **Hotel Booking Website** project is designed to help users find and book ho
 
 - **Responsive Design**: Adaptable to all screen sizes including mobile, tablet, and desktop.
 - **Room Listings**: Showcase different room types with images, prices, and descriptions.
-- **Amenities Section**: Lists the hotel’s amenities like Wi-Fi, pool access, and gym facilities.
+- **Amenities Section**: Lists the hotel’s amenities like Kitchen, Dryer, Parking, washer and outdoor  facilities.
 - **Booking Form**: Allows users to submit booking inquiries with their contact details.
 - **Cross-browser Compatibility**: Works well on all major browsers including Chrome, Firefox, Safari, and Edge.
 
@@ -33,7 +33,7 @@ The **Hotel Booking Website** project is designed to help users find and book ho
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/hotel-booking-website.git
+   git clone https://github.com/Muntasir-Ayan/assignment-1.git
 
 ### Project Structure
 
