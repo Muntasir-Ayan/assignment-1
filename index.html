@@ -18,13 +18,36 @@
     <header class="header">
       <a href="#"class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
       <nav class="nav-links">
-        <a href="#"> &#127760; United States</a>
+        <a href="#"> &#127760;</a>
+        <a href="#">United States</a>
         <a href="#">Trip broads</a>
         <a href="#">List your property</a>
         <a href="#">Help</a>
         <a href="#">My trip</a>
         <a href="#">Sign in</a>
       </nav>
+      <!-- pop up window -->
+      <div class="popup-container">
+        <div class="popup">
+          <div class="popup-header">
+            <h3>Display settings</h3>
+            <button class="close-btn">&times;</button>
+          </div>
+          <div class="region-selector">
+            <label for="region">Region:</label>
+            <select id="region">
+              <option value="Portugal">Portugal</option>
+              <option value="United States">United States</option>
+              <!-- Add more region options as needed -->
+            </select>
+          </div>
+          <div class="currency-display">
+            Currency: <span class="currency">EUR</span>
+          </div>
+        </div>
+      </div>
+      <!-- pop up window ended --> 
+
     </header>
     <!-- NavBar ended -->
 
@@ -914,6 +937,36 @@ copyLinkButton.addEventListener('click', () => {
 
 // share pop end
 
+// region pop up 
+const regionSelect = document.querySelector('#region');
+    const currencyDisplay = document.querySelector('.currency');
+    const popupContainer = document.querySelector('.popup-container');
+    const closeBtn = document.querySelector('.close-btn');
+
+    const regions = {
+      'Portugal': 'EUR',
+      'United States': 'USD',
+      // Add more regions and their corresponding currencies as needed
+    };
+
+    // Initial currency display
+    currencyDisplay.textContent = regions['Portugal'];
+
+    regionSelect.addEventListener('change', () => {
+      const selectedRegion = regionSelect.value;
+      const selectedCurrency = regions[selectedRegion];
+      currencyDisplay.textContent = selectedCurrency;
+    });
+
+    document.querySelector('.nav-links a:first-child').addEventListener('click', () => {
+      popupContainer.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popupContainer.style.display = 'none';
+    });
+
+    // region script end
 
     </script>
 
