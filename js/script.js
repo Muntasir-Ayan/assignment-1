@@ -1,6 +1,6 @@
 const photoCountElement = document.querySelector('.photo-count');
 const imageViewerElement = document.getElementById('image-viewer');
-const closeButton = document.querySelector('.close-button');
+const closeButton = document.getElementById('closeButton');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const imageElement = document.querySelector('.image');
@@ -17,6 +17,18 @@ const images = [
     src: 'https://example.com/image2.jpg',
     title: 'Another Image'
   },
+  {
+    src: 'https://example.com/image2.jpg',
+    title: 'Another Image'
+  },
+  {
+    src: 'https://example.com/image2.jpg',
+    title: 'Another Image'
+  },
+  {
+    src: 'https://example.com/image2.jpg',
+    title: 'Another Image'
+  },
   // Add more images as needed
 ];
 
@@ -27,7 +39,9 @@ photoCountElement.addEventListener('click', () => {
   updateImage(currentIndex);
 });
 
-closeButton.addEventListener('click', hideImageViewer);
+closeButton.addEventListener('click', () => {
+  hideImageViewer();
+});
 
 prevButton.addEventListener('click', () => {
   currentIndex = Math.max(currentIndex - 1, 0);
