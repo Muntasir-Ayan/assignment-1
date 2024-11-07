@@ -332,11 +332,47 @@
                     <div>📅 Nov 20</div>
                   </div>
                 </div>
-
-                <div class="travelers date-input">
+<!-- 
+                <div class="travelers date-input" onclick="openPopup()">
                   <p>Travelers</p>
-                  <div>👤 2 travelers</div>
-                </div>
+                  <div id="traveler-count">👤 2 travelers</div>
+              </div> -->
+
+              <div class="sidebar-travelers date-input" onclick="openPopup()">
+                <p>Travelers</p>
+                <div id="sidebar-traveler-count">👤 2 travelers</div>
+            </div>
+
+              <!-- side bar pop up -->
+              
+              
+<div class="sidebar-popup" id="sidebar-popup">
+  <h2>Travelers</h2>
+  
+  <div class="sidebar-section">
+      <p>Adults</p>
+      <button id="sidebar-adult-decrement" onclick="updateCount('adult', -1)">-</button>
+      <span id="sidebar-adult-count">0</span>
+      <button onclick="updateCount('adult', 1)">+</button>
+  </div>
+  
+  <div class="sidebar-section">
+      <p>Children <small>(Ages 0 to 17)</small></p>
+      <button id="sidebar-child-decrement" onclick="updateCount('child', -1)">-</button>
+      <span id="sidebar-child-count">0</span>
+      <button onclick="updateCount('child', 1)">+</button>
+  </div>
+  
+  <div class="sidebar-section">
+      <label>
+          <input type="checkbox" id="sidebar-pets"> I am traveling with pets
+      </label>
+  </div>
+  
+  <button onclick="closePopup()">Done</button>
+</div>
+
+              <!-- side bar pop up end -->
 
                 <div class="total">
                   <span>Total</span>
