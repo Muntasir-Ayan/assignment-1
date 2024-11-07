@@ -1648,67 +1648,63 @@
 /* share pop up end */
 
 /* pop up region start*/
-.popup-container {
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 400px;
+}
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-header h2 {
+  margin: 0;
+}
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+.overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
   z-index: 999;
 }
-
-.popup {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  max-width: 400px;
-  width: 100%;
+.show {
+  display: block;
 }
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
+.warning-text {
+  font-size: 12px;
+  color: #d9534f; /* Bootstrap's danger color */
+  margin-bottom: 15px;
 }
-
-.popup-header h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.close-btn {
-  background-color: transparent;
+.save-btn {
+  background-color: #007aff; /* Matches the blue save button color */
+  color: #fff;
   border: none;
-  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
+  font-size: 16px;
 }
-
-.region-selector {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.region-selector label {
-  margin-right: 8px;
-}
-
-.region-selector select {
-  padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.currency-display {
-  text-align: right;
-  font-weight: bold;
+.save-btn:hover {
+  background-color: #005bb5;
 }
 
 /* pop up region end */
