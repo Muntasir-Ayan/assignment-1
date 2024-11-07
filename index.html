@@ -16,10 +16,9 @@
   <div class="container">
     <!-- NavBar file -->
     <header class="header">
-      <a href="#"class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
+      <a href="#" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
       <nav class="nav-links">
-        <a href="#"> &#127760;</a>
-        <a href="#">United States</a>
+        <a href="#"> &#127760; United States</a>
         <a href="#">Trip broads</a>
         <a href="#">List your property</a>
         <a href="#">Help</a>
@@ -30,8 +29,9 @@
       <div class="popup-container">
         <div class="popup">
           <div class="popup-header">
-            <h3>Display settings</h3>
-            <button class="close-btn">&times;</button>
+            <button class="close-btn">&times; Display settings</button>
+            <!-- <h3>Display settings</h3> -->
+            
           </div>
           <div class="region-selector">
             <label for="region">Region:</label>
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <!-- pop up window ended --> 
+      <!-- pop up window ended -->
 
     </header>
     <!-- NavBar ended -->
@@ -71,7 +71,7 @@
               <div class="share-popup-header">
                 <button class="close-btn">&times;</button>
                 <h3>Juneau Vacation Home: Stunning View + Beach Access</h3>
-                
+
               </div>
               <div class="share-options">
                 <button class="copy-link-btn">
@@ -81,7 +81,7 @@
             </div>
           </div>
           <!-- share pop up end -->
-           
+
         </div>
         <!-- see all properties button end -->
 
@@ -142,7 +142,7 @@
         <!-- body Navigation end-->
 
         <!-- Overview start-->
-        
+
 
 
         <div class="container-overview">
@@ -154,7 +154,7 @@
                 <div class="property-type">Entire home</div>
                 <h1 class="property-title">Juneau Vacation Home: Stunning <br>View + Beach Access</h1>
               </div>
-              
+
 
               <div class="all-rating">
                 <div class="rating">
@@ -174,7 +174,7 @@
 
             <!-- feature start -->
             <div class="features two-column">
-              <div >
+              <div>
                 <div class="feature">
                   <span><i class="fa-solid fa-bed-pulse"></i> 2 bedrooms</span>
                 </div>
@@ -183,7 +183,7 @@
                 </div>
               </div>
 
-              <div >
+              <div>
                 <div class="feature">
                   <span><i class="fa-solid fa-toilet"></i> 1 bathroom</span>
                 </div>
@@ -273,7 +273,7 @@
                       <span class="drive-time">14 min drive</span>
                     </div>
 
-                    
+
                   </div>
                   <a href="#" class="see-more">See more about this area ›</a>
                 </div>
@@ -291,26 +291,26 @@
                 <div class="loading-icon">
                   <i class="fa-solid fa-spinner fa-3x"></i>
                 </div>
-  
+
                 <div>
                   <div>Members get our best prices when signed in!</div>
                   <button class="book-button">Sign in</button>
                 </div>
-  
+
               </div>
-  
+
               <div class="price-card">
                 <div class="price">
                   <span>$134</span> per night
                 </div>
-  
+
                 <!-- <div>Free cancellation</div>
                 <div style="color: green;">Your dates are available</div> -->
                 <div class="cancellation">
                   <span>✓</span> Free cancellation
                 </div>
-  
-  
+
+
                 <div class="availability">
                   <span>✓</span> Your dates are available
                 </div>
@@ -324,41 +324,76 @@
                     <div>📅 Nov 20</div>
                   </div>
                 </div>
-  
+
                 <div class="travelers date-input">
                   <p>Travelers</p>
                   <div>👤 2 travelers</div>
                 </div>
-  
+
                 <div class="total">
                   <span>Total</span>
                   <span>$543</span>
                 </div>
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
                 <div class="no-charge ">
                   <div style="display: inline;">Total includes fees, not tax
-  
+
                   </div>
                   <div>
-                    <a href="#" class="price-details" >Price details</a>
+                    <a href="#" class="price-details">Price details</a>
                   </div>
-                  
+
                 </div>
                 <button class="book-button">Book now</button>
-                <p style="text-align: center;">You will not charged yet</p>               
+                <p style="text-align: center;">You will not charged yet</p>
               </div>
               <a href="#" class="contact-host">Contact host</a>
               <hr>
               <div class="property-id"> <span class="pro">Property</span> <span># 9538104ha</span></div>
             </div>
           </div>
-          <!-- side bar -->
-          
+
+          <!-- Travelers Popup -->
+          <div class="travelers-popup" id="travelersPopup">
+            <div class="popup-content">
+              <button class="close-button" id="closePopup">&times;</button>
+
+              <div class="traveler-type">
+                <div class="type-label">Adults</div>
+                <div class="type-description">Ages 13 or above</div>
+                <div class="counter-container">
+                  <div class="counter-controls">
+                    <button class="counter-button" id="adultsDecrement" disabled>-</button>
+                    <span class="counter-value" id="adultsCount">0</span>
+                    <button class="counter-button" id="adultsIncrement">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="traveler-type">
+                <div class="type-label">Children</div>
+                <div class="type-description">Ages 2-12</div>
+                <div class="counter-container">
+                  <div class="counter-controls">
+                    <button class="counter-button" id="childrenDecrement" disabled>-</button>
+                    <span class="counter-value" id="childrenCount">0</span>
+                    <button class="counter-button" id="childrenIncrement" disabled>+</button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="done-button" id="doneButton">Done</button>
+            </div>
+          </div>
+          <!-- travelers Popup end -->
+
+          <!-- side bar End-->
+
         </div>
         <!-- Overview end-->
 
@@ -557,7 +592,7 @@
               <div>
                 <h2 class="amenities-title">Amenities</h2>
               </div>
-              
+
               <div>
                 <div class="amenities-grid">
                   <div class="amenity-item">
@@ -586,7 +621,7 @@
                   </div>
                 </div>
               </div>
-             
+
               <a href="#" class="see-all-link two-column-1">See all 34 amenities</a>
             </div>
           </div>
@@ -881,92 +916,189 @@
       updateHeartButtonState();
 
       heartButton.addEventListener('click', () => {
-      isSaved = !isSaved;
-      updateHeartButtonState();
-      localStorage.setItem('isSaved', isSaved);
+        isSaved = !isSaved;
+        updateHeartButtonState();
+        localStorage.setItem('isSaved', isSaved);
       });
 
       function updateHeartButtonState() {
-      if (isSaved) {
-        heartButton.style.color = 'red';
-      } 
-      else {
-        heartButton.style.color = '#00BFFF';
+        if (isSaved) {
+          heartButton.style.color = 'red';
+        }
+        else {
+          heartButton.style.color = '#00BFFF';
+        }
       }
-      }
 
-// heart button red end
+      // heart button red end
 
 
-// share pop start
-const shareButton = document.querySelector('.fa-arrow-up-from-bracket');
-const closeButton = document.querySelector('.close-btn');
-const copyLinkButton = document.querySelector('.copy-link-btn');
-const sharePopup = document.querySelector('.share-popup-container');
+      // share pop start
+      const shareButton = document.querySelector('.fa-arrow-up-from-bracket');
+      const closeButton = document.querySelector('.close-btn');
+      const copyLinkButton = document.querySelector('.copy-link-btn');
+      const sharePopup = document.querySelector('.share-popup-container');
 
-shareButton.addEventListener('click', () => {
-  sharePopup.style.display = 'flex';
-});
+      shareButton.addEventListener('click', () => {
+        sharePopup.style.display = 'flex';
+      });
 
-closeButton.addEventListener('click', () => {
-  sharePopup.style.display = 'none';
-});
+      closeButton.addEventListener('click', () => {
+        sharePopup.style.display = 'none';
+      });
 
-copyLinkButton.addEventListener('click', () => {
-  // Get the link to be copied
-  const linkToCopy = 'https://example.com/juneau-vacation-home';
+      copyLinkButton.addEventListener('click', () => {
+        // Get the link to be copied
+        const linkToCopy = 'https://example.com/juneau-vacation-home';
 
-  // Create a temporary input element to hold the link
-  const tempInput = document.createElement('textarea');
-  tempInput.value = linkToCopy;
-  document.body.appendChild(tempInput);
+        // Create a temporary input element to hold the link
+        const tempInput = document.createElement('textarea');
+        tempInput.value = linkToCopy;
+        document.body.appendChild(tempInput);
 
-  // Select and copy the link
-  tempInput.select();
-  document.execCommand('copy');
+        // Select and copy the link
+        tempInput.select();
+        document.execCommand('copy');
 
-  // Remove the temporary input element
-  document.body.removeChild(tempInput);
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
 
-  // Optionally, you can show a success message to the user
-  alert('Link copied to clipboard!');
+        // Optionally, you can show a success message to the user
+        alert('Link copied to clipboard!');
 
-  // Close the popup
-  sharePopup.style.display = 'none';
-});
+        // Close the popup
+        sharePopup.style.display = 'none';
+      });
 
-// share pop end
+      // share pop end
 
-// region pop up 
-const regionSelect = document.querySelector('#region');
-    const currencyDisplay = document.querySelector('.currency');
-    const popupContainer = document.querySelector('.popup-container');
-    const closeBtn = document.querySelector('.close-btn');
+      // region pop up 
+      const regionSelect = document.querySelector('#region');
+      const currencyDisplay = document.querySelector('.currency');
+      const popupContainer = document.querySelector('.popup-container');
+      const closeBtn = document.querySelector('.close-btn');
 
-    const regions = {
-      'Portugal': 'EUR',
-      'United States': 'USD',
-      // Add more regions and their corresponding currencies as needed
-    };
+      const regions = {
+        'Portugal': 'EUR',
+        'United States': 'USD',
+        // Add more regions and their corresponding currencies as needed
+      };
 
-    // Initial currency display
-    currencyDisplay.textContent = regions['Portugal'];
+      // Initial currency display
+      currencyDisplay.textContent = regions['Portugal'];
 
-    regionSelect.addEventListener('change', () => {
-      const selectedRegion = regionSelect.value;
-      const selectedCurrency = regions[selectedRegion];
-      currencyDisplay.textContent = selectedCurrency;
-    });
+      regionSelect.addEventListener('change', () => {
+        const selectedRegion = regionSelect.value;
+        const selectedCurrency = regions[selectedRegion];
+        currencyDisplay.textContent = selectedCurrency;
+      });
 
-    document.querySelector('.nav-links a:first-child').addEventListener('click', () => {
-      popupContainer.style.display = 'flex';
-    });
+      document.querySelector('.nav-links a:first-child').addEventListener('click', () => {
+        popupContainer.style.display = 'flex';
+      });
 
-    closeBtn.addEventListener('click', () => {
-      popupContainer.style.display = 'none';
-    });
+      closeBtn.addEventListener('click', () => {
+        popupContainer.style.display = 'none';
+      });
 
-    // region script end
+      // region script end
+
+      // side-bar PopUp
+      const travelersSelector = document.getElementById('travelersSelector');
+        const travelersPopup = document.getElementById('travelersPopup');
+        const closePopup = document.getElementById('closePopup');
+        const doneButton = document.getElementById('doneButton');
+        const totalTravelers = document.getElementById('totalTravelers');
+
+        // Adults counter elements
+        const adultsDecrement = document.getElementById('adultsDecrement');
+        const adultsIncrement = document.getElementById('adultsIncrement');
+        const adultsCount = document.getElementById('adultsCount');
+
+        // Children counter elements
+        const childrenDecrement = document.getElementById('childrenDecrement');
+        const childrenIncrement = document.getElementById('childrenIncrement');
+        const childrenCount = document.getElementById('childrenCount');
+
+        let adults = 0;
+        let children = 0;
+
+        // Show popup
+        travelersSelector.addEventListener('click', () => {
+            travelersPopup.style.display = 'block';
+        });
+
+        // Close popup
+        closePopup.addEventListener('click', () => {
+            travelersPopup.style.display = 'none';
+        });
+
+        // Close popup when clicking outside
+        travelersPopup.addEventListener('click', (e) => {
+            if (e.target === travelersPopup) {
+                travelersPopup.style.display = 'none';
+            }
+        });
+
+        // Adults counter
+        adultsIncrement.addEventListener('click', () => {
+            adults++;
+            updateCounts();
+        });
+
+        adultsDecrement.addEventListener('click', () => {
+            if (adults > 0) {
+                adults--;
+                if (adults === 0) {
+                    children = 0; // Reset children if adults becomes 0
+                }
+                updateCounts();
+            }
+        });
+
+        // Children counter
+        childrenIncrement.addEventListener('click', () => {
+            if (adults > 0) {
+                children++;
+                updateCounts();
+            }
+        });
+
+        childrenDecrement.addEventListener('click', () => {
+            if (children > 0) {
+                children--;
+                updateCounts();
+            }
+        });
+
+        // Done button
+        doneButton.addEventListener('click', () => {
+            totalTravelers.textContent = adults + children;
+            travelersPopup.style.display = 'none';
+        });
+
+        function updateCounts() {
+            // Update display
+            adultsCount.textContent = adults;
+            childrenCount.textContent = children;
+
+            // Update buttons state
+            adultsDecrement.disabled = adults === 0;
+            childrenDecrement.disabled = children === 0;
+            childrenIncrement.disabled = adults === 0;
+
+            // Enable/disable children controls based on adults count
+            if (adults === 0) {
+                childrenIncrement.disabled = true;
+                childrenDecrement.disabled = true;
+                children = 0;
+                childrenCount.textContent = '0';
+            } else {
+                childrenIncrement.disabled = false;
+                childrenDecrement.disabled = children === 0;
+            }
+        }
+        // side-bar PopUp end
 
     </script>
 
