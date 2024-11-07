@@ -69,25 +69,41 @@
             <a href="#">&#8592; See all properties</a>
           </div>
           <div class="upper_button">
-            <button> <i class="fa-solid fa-arrow-up-from-bracket" style="color: #00BFFF;"></i> Share</button>
+            <button class="share-button" onclick="openPopupShare()"> <i class="fa-solid fa-arrow-up-from-bracket" style="color: #00BFFF;"></i> Share</button>
             <button> <i class="fa-regular fa-heart" style="color: red;"></i> Save</button>
           </div>
 
           <!-- share pop up start -->
-          <div class="share-popup-container">
-            <div class="share-popup">
-              <div class="share-popup-header">
-                <button class="close-btn">&times;</button>
-                <h3>Juneau Vacation Home: Stunning View + Beach Access</h3>
+          <!-- Overlay background -->
+    <div id="share-overlay" class="share-overlay" onclick="closePopupShare()"></div>
 
-              </div>
-              <div class="share-options">
-                <button class="copy-link-btn">
-                  <i class="fa fa-link"></i> Copy link
-                </button>
-              </div>
+    <!-- Popup layout -->
+    <div class="share-popup" id="sharePopup">
+        <!-- Header section with close button and text -->
+        <div class="popup-header">
+            <span>Share</span>
+            <span class="close-button" onclick="closePopupShare()">&times;</span>
+        </div>
+
+        <!-- Image and text content section -->
+        <div class="popup-content">
+            <img src="https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0fGVufDB8fDB8fHww" alt="Vacation Image">
+            <div>
+                <h4>Juneau Vacation Home: Stunning View + Beach Access</h4>
+                <p>United States of America<br>9.8/10</p>
             </div>
-          </div>
+        </div>
+
+        <!-- Icons for social media -->
+        <div class="popup-icons">
+            <div class="icon">Messages</div>
+            <div class="icon">WhatsApp</div>
+            <div class="icon">Messenger</div>
+            <div class="icon">Facebook</div>
+            <div class="icon">X</div>
+            <div class="icon copy-link" onclick="copyLink()">Copy Link</div>
+        </div>
+    </div>
           <!-- share pop up end -->
 
         </div>

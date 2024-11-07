@@ -26,41 +26,28 @@ function updateHeartButtonState() {
 
 
 // share pop start
-const shareButton = document.querySelector('.fa-arrow-up-from-bracket');
-const closeButton = document.querySelector('.close-btn');
-const copyLinkButton = document.querySelector('.copy-link-btn');
-const sharePopup = document.querySelector('.share-popup-container');
+// Function to open the popup
+function openPopupShare() {
+    document.getElementById("share-overlay").style.display = "block";
+    document.getElementById("sharePopup").style.display = "block";
+}
 
-shareButton.addEventListener('click', () => {
-    sharePopup.style.display = 'flex';
-});
+// Function to close the popup
+function closePopupShare() {
+    document.getElementById("share-overlay").style.display = "none";
+    document.getElementById("sharePopup").style.display = "none";
+}
 
-closeButton.addEventListener('click', () => {
-    sharePopup.style.display = 'none';
-});
+// Function to copy link to clipboard
+function copyLink() {
+    const link = "https://example.com/share-link";
+    navigator.clipboard.writeText(link).then(() => {
+        alert("Link copied to clipboard!");
+    }).catch((error) => {
+        console.error("Could not copy link: ", error);
+    });
+}
 
-copyLinkButton.addEventListener('click', () => {
-    // Get the link to be copied
-    const linkToCopy = 'https://example.com/juneau-vacation-home';
-
-    // Create a temporary input element to hold the link
-    const tempInput = document.createElement('textarea');
-    tempInput.value = linkToCopy;
-    document.body.appendChild(tempInput);
-
-    // Select and copy the link
-    tempInput.select();
-    document.execCommand('copy');
-
-    // Remove the temporary input element
-    document.body.removeChild(tempInput);
-
-    // Optionally, you can show a success message to the user
-    alert('Link copied to clipboard!');
-
-    // Close the popup
-    sharePopup.style.display = 'none';
-});
 
 // share pop end
 

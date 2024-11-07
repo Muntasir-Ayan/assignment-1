@@ -1583,67 +1583,89 @@
 
 /* share pop up */
 
-.share-popup-container {
+/* Overlay background */
+.share-overlay {
+  display: none; /* Hidden by default */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Layer above all other content */
 }
 
+/* Popup container */
 .share-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  max-width: 400px;
-  width: 100%;
+  border-radius: 10px;
+  z-index: 1000; /* Higher than overlay */
 }
 
-.share-popup-header {
+/* Header section with close button */
+.popup-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-}
-
-.share-popup-header h3 {
-  margin: 0;
-  font-size: 18px;
   font-weight: bold;
 }
 
-.close-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
+.close-button {
   cursor: pointer;
+  font-size: 20px;
+  color: gray;
 }
 
-.share-options {
-  display: flex;
-  justify-content: center;
-}
-
-.copy-link-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
+/* Content section with image and text */
+.popup-content {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 
-.copy-link-btn i {
-  margin-right: 8px;
+.popup-content img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
+
+/* Social media icons */
+.popup-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style for Copy Link button */
+.copy-link {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f5f5f5;
+}
+
 
 /* share pop up end */
 
