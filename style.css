@@ -1768,3 +1768,76 @@ button {
 }
 
 /* Side-bar topUp End */
+
+
+/* pop image start  */
+
+.image-viewer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-viewer-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-btn-image {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-container {
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.navigation-buttons button {
+  margin: 0 5px;
+}
+
+.image-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-info .title {
+  font-weight: bold;
+}
+
+.image-info .count {
+  margin-left: 10px;
+}
+
+/* pop up image end */
